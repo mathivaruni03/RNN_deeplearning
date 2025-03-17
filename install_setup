@@ -1,0 +1,20 @@
+Installation & Setup
+1️⃣ Install dependencies:
+pip install pandas numpy tensorflow scikit-learn matplotlib seaborn
+2️⃣ Check GPU Availability in TensorFlow:
+
+python:
+import tensorflow as tf
+print("Num GPUs Available:", len(tf.config.experimental.list_physical_devices('GPU')))
+3️⃣ Run the script to train the RNN model on GPU.
+
+Model Architecture:
+SimpleRNN layers for sequential data processing.
+Dropout layers to prevent overfitting.
+Adam optimizer for efficient training.
+Mean Squared Error (MSE) loss function for regression.
+
+Usage:
+Modify the dataset path in path = "your/dataset/path"
+Adjust seq_length, epochs, and batch_size to fine-tune the model.
+Run the Python script or Jupyter Notebook to train & visualize results.
